@@ -15,7 +15,7 @@ st.title("Bike Sharing Dataset Analysis")
 
 # first plot about distribution of bike sharing based on season
 st.header("Distribution of bike sharing based on day")
-fig, ax = plt.subplots(figsize=(15, 6))
+fig, ax = plt.subplots(figsize=(15, 8))
 hue_order = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
 sns.lineplot(x='hour', y='total_users', hue='weekday', palette='bright', hue_order=hue_order, data=main_df)
@@ -54,6 +54,7 @@ ax2.set_xticks(range(0, 24))
 ax2.set_ylabel('Registered users', fontsize=15)
 ax2.legend(loc='upper right', fontsize=15, title='Workday', title_fontsize=15, labels=['Yes', 'No'], handles=ax2.lines[::len(hue_order)+1])
 st.pyplot(fig)
+st.info("note the difference in scale between y axis")
 
 
 # fourth plot about distribution of bike sharing based on weather
