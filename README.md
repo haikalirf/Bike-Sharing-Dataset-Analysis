@@ -3,6 +3,8 @@ This project contains a simple dashboard analysis on a bike sharing dataset.
 
 ## Dashboard
 The dashboard can be found [here](https://bike-sharing-dataset-analysis.streamlit.app/)
+
+### Preview
 ![Screenshot 2025-03-03 144017](https://github.com/user-attachments/assets/b76eacf3-9aaa-4052-a41f-76b57f48ee7b)
 
 ## Repository Structure
